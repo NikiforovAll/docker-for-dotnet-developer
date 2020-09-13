@@ -91,3 +91,8 @@ https://labs.play-with-docker.com/
 
 follow up resources??
 --
+
+
+https://linuxhandbook.com/list-containers-docker/
+
+https://docs.docker.com/engine/reference/commandline/ps/#filtering
