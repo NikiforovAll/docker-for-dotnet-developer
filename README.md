@@ -1,98 +1,42 @@
 # Materials for .NET Developers to get started with docker
 
+This repository contains materials and demos for .NET developer to get started with docker.
+
+```bash
+$ tree ./
+./
+|-- README.md
+|-- demos
+|   |-- 0-demo
+|   |   `-- README.md
+|   |-- 1-demo
+|   |   `-- README.md
+|   `-- 2-demo
+|       `-- README.md
+`-- docs
+    |-- assets
+    |   |-- architecture.svg
+    |   |-- container-vm-whatcontainer_2.png
+    |   |-- container-what-is-container.png
+    |   |-- docker-choco.png
+    |   |-- docker-dashboard.png
+    |   |-- docker-engine.png
+    |   |-- docker-for-windows-expose-daemon-without-tls.jpg
+    |   |-- docker-in-wsl2.png
+    |   |-- docker-installer.png
+    |   |-- docker-today.png
+    |   |-- docker-vs-vms-2.png
+    |   |-- engine-components-flow.png
+    |   |-- play-with-docker.png
+    |   `-- winver.png
+    |-- en
+    |   |-- 0.1.docker-vs-VM.md
+    |   |-- 0.what-is-docker.md
+    |   |-- 1.install-docker.md
+    |   `-- x.devcontainers.md
+    `-- ru
+```
+
+## Reference
+
 <https://www.theurlist.com/itvdn-docker-for-dotnet-dev>
-
-## Tools setup
-
-* wsl2 (<https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel>)
-* wt.exe
-* winget.exe
-  * <https://github.com/microsoft/winget-cli>
-
-----
-
-NOT PROCESSED MATERIAL BELOW 👷‍♂️⚒
-
-docker dashboard
-
-https://docs.docker.com/desktop/dashboard/
-
-## Example for .NET Core 
-
-https://github.com/dockersamples/example-voting-app
-
-hello world -> simple web (docker file) -> voting app (docker compose)
-
-https://docs.microsoft.com/en-us/dotnet/architecture/containerized-lifecycle/design-develop-containerized-apps/docker-apps-inner-loop-workflow
-
---
-docker images 
-
-docker image list
-
-docker ps 
-
-docker ps -a 
-
-docker container list (or ls)
-
-docker container ls -a
-
-docker rm $(docker ps -aq)
-
-
-TODO: consider installing autocompletion for windows or wsl2
-
-
-docker image history 
-
-docker inspect
-
-
-TODO: also provide information how to work with mounts and logs inside docker
-
-https://devconnected.com/docker-logs-complete-guide/
-https://docs.docker.com/engine/reference/commandline/logs/
-https://www.papertrail.com/solution/tips/how-to-live-tail-docker-logs/
-
---
-
----
-
-
-
-## Getting started 
-
-docker run -d -p 80:80 docker/getting-started
-
-TODO: go through tutorial and see how it can be used in webinar
-
-also consider creating a list of usefuil resources
-
-https://github.com/docker/for-win/issues/2336
-
-## https://stackoverflow.com/questions/30172605/how-do-i-get-into-a-docker-containers-shell
-
-attach to container
-
-## 
-docker logs
-
-https://docs.docker.com/engine/reference/commandline/logs/
-https://devconnected.com/docker-logs-complete-guide/
-
-
-https://www.papertrail.com/solution/tips/how-to-live-tail-docker-logs/
-
----
-
-https://www.docker.com/101-tutorial
-https://labs.play-with-docker.com/
-
-follow up resources??
---
-
-
-https://linuxhandbook.com/list-containers-docker/
-
-https://docs.docker.com/engine/reference/commandline/ps/#filtering
