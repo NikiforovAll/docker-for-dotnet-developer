@@ -2,7 +2,18 @@
 
 All you need is vscode + vscode.ms-vscode-remote.vscode-remote-extensionpack, docker and you can start developing dotnet core application on your machine. 🚀
 
+![alt](../../docs/assets/architecture-containers.png)
+
+1. remote-containers.trySample
+   1. Select **Go** template
+   2. Serve a goo server and browse url
+   3. explain how docker container mounts and build dev container, show volume in vscode.docker extension
+      1. when you open volume in container, it is not a dev container but rather different remote option to check folumes easily
+      2. ![alt](../../docs/assets/docker-ext.png)
+2. bonus demo 🐳 📦
+
 ## Script
+
 Inside container:
 
 ```bash
