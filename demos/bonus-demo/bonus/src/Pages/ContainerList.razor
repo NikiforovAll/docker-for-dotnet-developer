@@ -1,0 +1,39 @@
+﻿@page "/list-containers"
+
+@using Docker.DotNet;
+@using Docker.DotNet.Models;
+
+<h1>Container List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var container in containers)
+            {
+        <tr>
+            <td>🐋 📦 @string.Join(", ", container.Names)</td>
+            <td>@container.Image</td>
+        </tr>
+            }
+    </tbody>
+</table>
+
+@code {
+    IList<ContainerListResponse> containers;
+    DockerClient client;
+
+    protected override async Task OnInitializedAsync()
+    {
+        client = new DockerClientConfiguration().CreateClient();
+        containers = await client.Containers.ListContainersAsync(
+            new ContainersListParameters()
+            {
+                Limit = 10,
+            });
+    }
+}
