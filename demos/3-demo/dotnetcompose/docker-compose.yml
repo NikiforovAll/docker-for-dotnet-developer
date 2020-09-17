@@ -1,0 +1,25 @@
+version: "3"
+services:
+    web:
+        build: .
+        ports:
+            - "8000:80"
+        # environment:
+        #     ASPNETCORE_HTTPS_PORT: https://+:5001
+        #     ASPNETCORE_URLS: http://+:5000
+        depends_on:
+            - db
+    db:
+        image: "mcr.microsoft.com/mssql/server"
+        environment:
+            SA_PASSWORD: "Your_password123"
+            ACCEPT_EULA: "Y"
+            MSSQL_PID: "Express"
+        ports: 
+        - "1433:1433"
+        volumes:
+        - type: volume
+          source: data
+          target: /var/opt/mssql
+volumes:
+    data:
