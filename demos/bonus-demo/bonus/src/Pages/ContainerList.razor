@@ -24,16 +24,16 @@
 </table>
 
 @code {
-    IList<ContainerListResponse> containers;
-    DockerClient client;
+    IList<ContainerListResponse> containers = new List<ContainerListResponse>();
 
     protected override async Task OnInitializedAsync()
     {
-        client = new DockerClientConfiguration().CreateClient();
+        using DockerClient client = new DockerClientConfiguration().CreateClient();
         containers = await client.Containers.ListContainersAsync(
             new ContainersListParameters()
             {
                 Limit = 10,
             });
+        client.Dispose();
     }
 }

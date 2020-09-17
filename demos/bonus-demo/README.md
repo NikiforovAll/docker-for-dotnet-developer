@@ -12,6 +12,8 @@ All you need is vscode + vscode.ms-vscode-remote.vscode-remote-extensionpack, do
 
 ## Dev containers
 
+### Go
+
 1. remote-containers.trySample
    1. Select **Go** template
    2. Serve a goo server and browse url
@@ -20,14 +22,14 @@ All you need is vscode + vscode.ms-vscode-remote.vscode-remote-extensionpack, do
       2. ![alt](../../docs/assets/docker-ext.png)
 2. bonus demo 🐳 📦
 
-## Script
+### Docker in Docker
 
 Inside container:
 
 ```bash
 docker build -t bonusdemo:latest . | tee bonusdemo.build.log
-docker container run --rm --name todo1 -d -P bonusdemo
-docker container run --rm --name todo2 -d -P -v /var/run/docker.sock:/var/run/docker.sock bonusdemo:latest
+# docker container run --rm --name todo1 -d -P bonusdemo
+docker container run --rm --name todo -d -P -v /var/run/docker.sock:/var/run/docker.sock bonusdemo:latest
 docker inspect <id> | code - &
 docker rm -f $(docker ps -a -f ancestor=bonusdemo -q)
 ```
