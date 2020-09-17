@@ -4,6 +4,14 @@ All you need is vscode + vscode.ms-vscode-remote.vscode-remote-extensionpack, do
 
 ![alt](../../docs/assets/architecture-containers.png)
 
+## Tye, Dapr, Steeltoe
+
+* <https://github.com/dotnet/tye/tree/master/samples/apps-with-core-angular>
+* <https://github.com/dapr/dapr>
+* <https://steeltoe.io/>
+
+## Dev containers
+
 1. remote-containers.trySample
    1. Select **Go** template
    2. Serve a goo server and browse url

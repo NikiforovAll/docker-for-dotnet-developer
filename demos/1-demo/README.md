@@ -5,9 +5,9 @@
 3. Run `docker container run --rm --interactive --tty alpine`
    1. Mention: `--detach`
 4. Inside container run:
-   1. `whoami` 
+   1. `whoami`
    2. `hostname`
-   3. `top`
+   3. `top` | `uname`
    4. `date && cal`, interestingly date is shared from host
    5. `echo 'echo running...' > script.sh`
    6. `chmod +x ./script.sh`
