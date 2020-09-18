@@ -2,6 +2,9 @@
 
 This repository contains materials and demos for .NET developer to get started with docker.
 
+## Related webinar (RU)
+youtube.com/watch?v=7j6QhKsLGRw&list=LLPBmZqB43jyARyg_-BtHziA&ab_channel=ITVDN
+
 ```bash
 $ tree -L 4
 .
