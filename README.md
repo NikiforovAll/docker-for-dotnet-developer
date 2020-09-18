@@ -3,24 +3,63 @@
 This repository contains materials and demos for .NET developer to get started with docker.
 
 ```bash
-$ tree ./
-./
+$ tree -L 4
+.
 |-- README.md
 |-- demos
 |   |-- 0-demo
 |   |   `-- README.md
 |   |-- 1-demo
-|   |   `-- README.md
-|   `-- 2-demo
-|       `-- README.md
+|   |   |-- README.md
+|   |   `-- main.csx
+|   |-- 2-demo
+|   |   |-- README.md
+|   |   |-- complexapp
+|   |   |   |-- Dockerfile
+|   |   |   |-- README.md
+|   |   |   |-- TestResults
+|   |   |   |-- complexapp
+|   |   |   |-- complexapp.sln
+|   |   |   |-- libbar
+|   |   |   |-- libfoo
+|   |   |   `-- tests
+|   |   `-- dotnetapp
+|   |       |-- Dockerfile
+|   |       |-- Program.cs
+|   |       |-- README.md
+|   |       |-- RomanticProfile.cs
+|   |       |-- bin
+|   |       |-- dotnetapp.csproj
+|   |       `-- obj
+|   |-- 3-demo
+|   |   |-- README.md
+|   |   |-- dotnetcompose
+|   |   |   |-- Dockerfile
+|   |   |   |-- aspnetapp
+|   |   |   |-- aspnetapp.sln
+|   |   |   `-- docker-compose.yml
+|   |   `-- dotnetcompose-mvc
+|   |       |-- Program.cs
+|   |       |-- Startup.cs
+|   |       |-- docker-compose.yml
+|   |       |-- dotnetcompose.csproj
+|   |       `-- entrypoint.sh
+|   `-- bonus-demo
+|       |-- README.md
+|       `-- bonus
+|           |-- Dockerfile
+|           |-- config
+|           `-- src
 `-- docs
     |-- assets
+    |   |-- architecture-containers.png
     |   |-- architecture.svg
     |   |-- container-vm-whatcontainer_2.png
     |   |-- container-what-is-container.png
     |   |-- docker-choco.png
     |   |-- docker-dashboard.png
     |   |-- docker-engine.png
+    |   |-- docker-ext.png
     |   |-- docker-for-windows-expose-daemon-without-tls.jpg
     |   |-- docker-in-wsl2.png
     |   |-- docker-installer.png
@@ -35,6 +74,10 @@ $ tree ./
     |   |-- 1.install-docker.md
     |   `-- x.devcontainers.md
     `-- ru
+
+25 directories, 44 files
+
+
 ```
 
 ## Reference

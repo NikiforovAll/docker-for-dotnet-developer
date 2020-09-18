@@ -7,11 +7,6 @@
 * ➕ show how to join database and do some queries
   * `SELECT * from master.sys.sysusers`
 
-* Leave how to connect database and API as homework
-
-
-## Concepts & Ideas
-
 ## Reference
 
 * <https://docs.docker.com/compose/>

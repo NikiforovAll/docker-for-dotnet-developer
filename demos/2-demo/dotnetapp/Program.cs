@@ -10,7 +10,7 @@ public static class Program
         var message = args is object && args.Length > 0 ? string.Join(' ', args) : defaultMessage;
 
         WriteLine();
-        WriteLine($"      {message}{GetBot()}");
+        WriteLine($"      {message}{RomanticProfile.GetProfile()}");
 
         WriteLine("Environment:");
         WriteLine(RuntimeInformation.FrameworkDescription);

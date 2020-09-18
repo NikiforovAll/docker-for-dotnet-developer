@@ -13,23 +13,23 @@
    6. `chmod +x ./script.sh`
    7. `./script.sh`
 5. Open new pane: split (without closing of first terminal)
-   1. Run `docker container exec --workdir / <id> /bin/sh h1.sh`
+   1. Run `docker container exec --workdir / <id> /bin/sh script.sh`
 6. Show detached mode
    1. `docker container create -it --name demo1-alpine alpine`
    2. `docker container attach demo1-alpine`
-   3. `docker container attach demo1-alpine`
    4. `find . -name *.sh`
 7. Run `docker container top demo1-alpine`
 8. Run `docker container logs demo1-alpine --follow`
-9. Open new pane: split
-10. Run `docker container inspect demo1-alpine | code - &`
+9. Do something in initial terminal
+10. Open new pane: split
+11. Run `docker container inspect demo1-alpine | code - &`
     1. Id
     2. State
     3. Image
     4. LogPath
     5. Mounts
     6. NetworkSettings
-11. `docker container rm --force <id>`
+12. `docker container rm --force <id>`
 
 ### Bonus
 
